@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="navbar">
+        <div class="nav-left">
+            <p class="nav-heading">airbnb</p>
+        </div>
+        <div class="nav-center">
+            <a href="" class="link link-1">Homes</a>
+            <a href="" class="link link-2">Experiences</a>
+        </div>
+        <div class="nav-right">
+            <span class="nav-span">Airbnb your home</span>
+            <div class="web-icon">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;"><path d="M8 .25a7.77 7.77 0 0 1 7.75 7.78 7.75 7.75 0 0 1-7.52 7.72h-.25A7.75 7.75 0 0 1 .25 8.24v-.25A7.75 7.75 0 0 1 8 .25zm1.95 8.5h-3.9c.15 2.9 1.17 5.34 1.88 5.5H8c.68 0 1.72-2.37 1.93-5.23zm4.26 0h-2.76c-.09 1.96-.53 3.78-1.18 5.08A6.26 6.26 0 0 0 14.17 9zm-9.67 0H1.8a6.26 6.26 0 0 0 3.94 5.08 12.59 12.59 0 0 1-1.16-4.7l-.03-.38zm1.2-6.58-.12.05a6.26 6.26 0 0 0-3.83 5.03h2.75c.09-1.83.48-3.54 1.06-4.81zm2.25-.42c-.7 0-1.78 2.51-1.94 5.5h3.9c-.15-2.9-1.18-5.34-1.89-5.5h-.07zm2.28.43.03.05a12.95 12.95 0 0 1 1.15 5.02h2.75a6.28 6.28 0 0 0-3.93-5.07z"></path></svg>
+            </div>
+            <div class="nav-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"><g fill="none"><path d="M2 16h28M2 24h28M2 8h28"></path></g></svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 100%; width: 2rem; fill: grey;"><path d="M16 .7C7.56.7.7 7.56.7 16S7.56 31.3 16 31.3 31.3 24.44 31.3 16 24.44.7 16 .7zm0 28c-4.02 0-7.6-1.88-9.93-4.81a12.43 12.43 0 0 1 6.45-4.4A6.5 6.5 0 0 1 9.5 14a6.5 6.5 0 0 1 13 0 6.51 6.51 0 0 1-3.02 5.5 12.42 12.42 0 0 1 6.45 4.4A12.67 12.67 0 0 1 16 28.7z"></path></svg>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Search -->
+     <div class="search">
+    <div class="search-bar">
+        <div class="search-item">
+          <label>Where</label>
+          <span>Search destinations</span>
+        </div>
+        <div class="search-item">
+          <label>Check in</label>
+          <span>Add dates</span>
+        </div>
+        <div class="search-item">
+          <label>Check out</label>
+          <span>Add dates</span>
+        </div>
+        <div class="search-item">
+          <label>Who</label>
+          <span>Add guests</span>
+        </div>
+        <button class="search-button">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+    <hr style="margin-top: 2rem;">
+    <!-- category bar -->
+    <div class="category-bar">
+        <div class="category-item active">
+          <i class="fas fa-mug-hot"></i>
+          <span>Bed & breakfasts</span>
+        </div>
+        <div class="category-item">
+          <i class="fas fa-ticket-alt"></i>
+          <span>Icons</span>
+        </div>
+        <div class="category-item">
+          <i class="fas fa-umbrella-beach"></i>
+          <span>Beach</span>
+        </div>
+        <div class="category-item">
+          <i class="fas fa-city"></i>
+          <span>Top cities</span>
+        </div>
+        <div class="category-item">
+          <i class="fas fa-concierge-bell"></i>
+          <span>Luxe</span>
+        </div>
+        <div class="category-item">
+          <i class="fas fa-couch"></i>
+          <span>Rooms</span>
+        </div>
+        <div class="category-item">
+          <i class="fas fa-fire"></i>
+          <span>Trending</span>
+        </div>
+        <div class="category-item">
+          <i class="fas fa-image"></i>
+          <span>Amazing views</span>
+        </div>
+        <div class="category-item">
+          <i class="fas fa-snowflake"></i>
+          <span>Arctic</span>
+        </div>
+        <div class="category-item">
+          <i class="fas fa-rocket"></i>
+          <span>OMG!</span>
+        </div>
+        <div class="category-item">
+          <i class="fas fa-drafting-compass"></i>
+          <span>Design</span>
+        </div>
+      </div>
+      <!-- Listing -->
+      <div class="listing-container">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-1.avif" alt="House 1">
+            <div class="badge">Guest favorite</div>
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Udaipur, India <i class="fas fa-star "></i> 4.83</div>
+            <div class="host">Hosted by Kalavati</div>
+            <div class="date">May 10 – 15</div>
+            <div class="price">$98 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-2.avif" alt="House 2">
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Udaipur, India<i class="fas fa-star"></i> 4.83</div>
+            <div class="host">Hosted by Tulsi</div>
+            <div class="date">May 20 – 25</div>
+            <div class="price">$174 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-3.avif" alt="House 3">
+            <div class="badge">Guest favorite</div>
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Patna, India<i class="fas fa-star"></i> 4.93</div>
+            <div class="host">Hosted by Jagdip</div>
+            <div class="date">May 19 – 24</div>
+            <div class="price">$136 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-4.avif" alt="House 4">
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Udaipur, India <i class="fas fa-star"></i> 5.0</div>
+            <div class="host">Hosted by Lovely & Jitu</div>
+            <div class="date">May 9 – 14</div>
+            <div class="price">$342 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 5 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-5.avif" alt="House 5">
+            <div class="badge">Guest favorite</div>
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Jodhpur, India<i class="fas fa-star"></i> 4.82</div>
+            <div class="host">Hosted by Shuchita</div>
+            <div class="date">May 9 – 14</div>
+            <div class="price">$204 for 5 nights</div>
+          </div>
+        </div>
+
+         <!-- Card 1 -->
+         <div class="card">
+            <div class="card-image">
+              <img src="./Assets/img-1.avif" alt="House 1">
+              <div class="badge">Guest favorite</div>
+              <div class="favorite"><i class="far fa-heart"></i></div>
+            </div>
+            <div class="card-content">
+              <div class="location">Udaipur, India <i class="fas fa-star "></i> 4.83</div>
+              <div class="host">Hosted by Kalavati</div>
+              <div class="date">May 10 – 15</div>
+              <div class="price">$98 for 5 nights</div>
+            </div>
+          </div>
+        
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="./Assets/img-2.avif" alt="House 2">
+              <div class="favorite"><i class="far fa-heart"></i></div>
+            </div>
+            <div class="card-content">
+              <div class="location">Udaipur, India<i class="fas fa-star"></i> 4.83</div>
+              <div class="host">Hosted by Tulsi</div>
+              <div class="date">May 20 – 25</div>
+              <div class="price">$174 for 5 nights</div>
+            </div>
+          </div>
+        
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="./Assets/img-3.avif" alt="House 3">
+              <div class="badge">Guest favorite</div>
+              <div class="favorite"><i class="far fa-heart"></i></div>
+            </div>
+            <div class="card-content">
+              <div class="location">Patna, India<i class="fas fa-star"></i> 4.93</div>
+              <div class="host">Hosted by Jagdip</div>
+              <div class="date">May 19 – 24</div>
+              <div class="price">$136 for 5 nights</div>
+            </div>
+          </div>
+        
+          <!-- Card 4 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="./Assets/img-4.avif" alt="House 4">
+              <div class="favorite"><i class="far fa-heart"></i></div>
+            </div>
+            <div class="card-content">
+              <div class="location">Udaipur, India <i class="fas fa-star"></i> 5.0</div>
+              <div class="host">Hosted by Lovely & Jitu</div>
+              <div class="date">May 9 – 14</div>
+              <div class="price">$342 for 5 nights</div>
+            </div>
+          </div>
+        
+          <!-- Card 5 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="./Assets/img-5.avif" alt="House 5">
+              <div class="badge">Guest favorite</div>
+              <div class="favorite"><i class="far fa-heart"></i></div>
+            </div>
+            <div class="card-content">
+              <div class="location">Jodhpur, India<i class="fas fa-star"></i> 4.82</div>
+              <div class="host">Hosted by Shuchita</div>
+              <div class="date">May 9 – 14</div>
+              <div class="price">$204 for 5 nights</div>
+            </div>
+          </div>
+
+           <!-- Card 1 -->
+        <div class="card">
+            <div class="card-image">
+              <img src="./Assets/img-1.avif" alt="House 1">
+              <div class="badge">Guest favorite</div>
+              <div class="favorite"><i class="far fa-heart"></i></div>
+            </div>
+            <div class="card-content">
+              <div class="location">Udaipur, India <i class="fas fa-star "></i> 4.83</div>
+              <div class="host">Hosted by Kalavati</div>
+              <div class="date">May 10 – 15</div>
+              <div class="price">$98 for 5 nights</div>
+            </div>
+          </div>
+        
+          <!-- Card 2 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="./Assets/img-2.avif" alt="House 2">
+              <div class="favorite"><i class="far fa-heart"></i></div>
+            </div>
+            <div class="card-content">
+              <div class="location">Udaipur, India<i class="fas fa-star"></i> 4.83</div>
+              <div class="host">Hosted by Tulsi</div>
+              <div class="date">May 20 – 25</div>
+              <div class="price">$174 for 5 nights</div>
+            </div>
+          </div>
+        
+          <!-- Card 3 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="./Assets/img-3.avif" alt="House 3">
+              <div class="badge">Guest favorite</div>
+              <div class="favorite"><i class="far fa-heart"></i></div>
+            </div>
+            <div class="card-content">
+              <div class="location">Patna, India<i class="fas fa-star"></i> 4.93</div>
+              <div class="host">Hosted by Jagdip</div>
+              <div class="date">May 19 – 24</div>
+              <div class="price">$136 for 5 nights</div>
+            </div>
+          </div>
+        
+          <!-- Card 4 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="./Assets/img-4.avif" alt="House 4">
+              <div class="favorite"><i class="far fa-heart"></i></div>
+            </div>
+            <div class="card-content">
+              <div class="location">Udaipur, India <i class="fas fa-star"></i> 5.0</div>
+              <div class="host">Hosted by Lovely & Jitu</div>
+              <div class="date">May 9 – 14</div>
+              <div class="price">$342 for 5 nights</div>
+            </div>
+          </div>
+        
+          <!-- Card 5 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="./Assets/img-5.avif" alt="House 5">
+              <div class="badge">Guest favorite</div>
+              <div class="favorite"><i class="far fa-heart"></i></div>
+            </div>
+            <div class="card-content">
+              <div class="location">Jodhpur, India<i class="fas fa-star"></i> 4.82</div>
+              <div class="host">Hosted by Shuchita</div>
+              <div class="date">May 9 – 14</div>
+              <div class="price">$204 for 5 nights</div>
+            </div>
+          </div>
+
+           <!-- Card 1 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-1.avif" alt="House 1">
+            <div class="badge">Guest favorite</div>
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Udaipur, India <i class="fas fa-star "></i> 4.83</div>
+            <div class="host">Hosted by Kalavati</div>
+            <div class="date">May 10 – 15</div>
+            <div class="price">$98 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-2.avif" alt="House 2">
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Udaipur, India<i class="fas fa-star"></i> 4.83</div>
+            <div class="host">Hosted by Tulsi</div>
+            <div class="date">May 20 – 25</div>
+            <div class="price">$174 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-3.avif" alt="House 3">
+            <div class="badge">Guest favorite</div>
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Patna, India<i class="fas fa-star"></i> 4.93</div>
+            <div class="host">Hosted by Jagdip</div>
+            <div class="date">May 19 – 24</div>
+            <div class="price">$136 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-4.avif" alt="House 4">
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Udaipur, India <i class="fas fa-star"></i> 5.0</div>
+            <div class="host">Hosted by Lovely & Jitu</div>
+            <div class="date">May 9 – 14</div>
+            <div class="price">$342 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 5 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-5.avif" alt="House 5">
+            <div class="badge">Guest favorite</div>
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Jodhpur, India<i class="fas fa-star"></i> 4.82</div>
+            <div class="host">Hosted by Shuchita</div>
+            <div class="date">May 9 – 14</div>
+            <div class="price">$204 for 5 nights</div>
+          </div>
+        </div>
+
+         <!-- Card 1 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-1.avif" alt="House 1">
+            <div class="badge">Guest favorite</div>
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Udaipur, India <i class="fas fa-star "></i> 4.83</div>
+            <div class="host">Hosted by Kalavati</div>
+            <div class="date">May 10 – 15</div>
+            <div class="price">$98 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-2.avif" alt="House 2">
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Udaipur, India<i class="fas fa-star"></i> 4.83</div>
+            <div class="host">Hosted by Tulsi</div>
+            <div class="date">May 20 – 25</div>
+            <div class="price">$174 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-3.avif" alt="House 3">
+            <div class="badge">Guest favorite</div>
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Patna, India<i class="fas fa-star"></i> 4.93</div>
+            <div class="host">Hosted by Jagdip</div>
+            <div class="date">May 19 – 24</div>
+            <div class="price">$136 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-4.avif" alt="House 4">
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Udaipur, India <i class="fas fa-star"></i> 5.0</div>
+            <div class="host">Hosted by Lovely & Jitu</div>
+            <div class="date">May 9 – 14</div>
+            <div class="price">$342 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 5 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-5.avif" alt="House 5">
+            <div class="badge">Guest favorite</div>
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Jodhpur, India<i class="fas fa-star"></i> 4.82</div>
+            <div class="host">Hosted by Shuchita</div>
+            <div class="date">May 9 – 14</div>
+            <div class="price">$204 for 5 nights</div>
+          </div>
+        </div>
+
+         <!-- Card 1 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-1.avif" alt="House 1">
+            <div class="badge">Guest favorite</div>
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Udaipur, India <i class="fas fa-star "></i> 4.83</div>
+            <div class="host">Hosted by Kalavati</div>
+            <div class="date">May 10 – 15</div>
+            <div class="price">$98 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-2.avif" alt="House 2">
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Udaipur, India<i class="fas fa-star"></i> 4.83</div>
+            <div class="host">Hosted by Tulsi</div>
+            <div class="date">May 20 – 25</div>
+            <div class="price">$174 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-3.avif" alt="House 3">
+            <div class="badge">Guest favorite</div>
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Patna, India<i class="fas fa-star"></i> 4.93</div>
+            <div class="host">Hosted by Jagdip</div>
+            <div class="date">May 19 – 24</div>
+            <div class="price">$136 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-4.avif" alt="House 4">
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Udaipur, India <i class="fas fa-star"></i> 5.0</div>
+            <div class="host">Hosted by Lovely & Jitu</div>
+            <div class="date">May 9 – 14</div>
+            <div class="price">$342 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 5 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-5.avif" alt="House 5">
+            <div class="badge">Guest favorite</div>
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Jodhpur, India<i class="fas fa-star"></i> 4.82</div>
+            <div class="host">Hosted by Shuchita</div>
+            <div class="date">May 9 – 14</div>
+            <div class="price">$204 for 5 nights</div>
+          </div>
+        </div>
+
+         <!-- Card 1 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-1.avif" alt="House 1">
+            <div class="badge">Guest favorite</div>
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Udaipur, India <i class="fas fa-star "></i> 4.83</div>
+            <div class="host">Hosted by Kalavati</div>
+            <div class="date">May 10 – 15</div>
+            <div class="price">$98 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-2.avif" alt="House 2">
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Udaipur, India<i class="fas fa-star"></i> 4.83</div>
+            <div class="host">Hosted by Tulsi</div>
+            <div class="date">May 20 – 25</div>
+            <div class="price">$174 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-3.avif" alt="House 3">
+            <div class="badge">Guest favorite</div>
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Patna, India<i class="fas fa-star"></i> 4.93</div>
+            <div class="host">Hosted by Jagdip</div>
+            <div class="date">May 19 – 24</div>
+            <div class="price">$136 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-4.avif" alt="House 4">
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Udaipur, India <i class="fas fa-star"></i> 5.0</div>
+            <div class="host">Hosted by Lovely & Jitu</div>
+            <div class="date">May 9 – 14</div>
+            <div class="price">$342 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 5 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-5.avif" alt="House 5">
+            <div class="badge">Guest favorite</div>
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Jodhpur, India<i class="fas fa-star"></i> 4.82</div>
+            <div class="host">Hosted by Shuchita</div>
+            <div class="date">May 9 – 14</div>
+            <div class="price">$204 for 5 nights</div>
+          </div>
+        </div>
+
+         <!-- Card 1 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-1.avif" alt="House 1">
+            <div class="badge">Guest favorite</div>
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Udaipur, India <i class="fas fa-star "></i> 4.83</div>
+            <div class="host">Hosted by Kalavati</div>
+            <div class="date">May 10 – 15</div>
+            <div class="price">$98 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-2.avif" alt="House 2">
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Udaipur, India<i class="fas fa-star"></i> 4.83</div>
+            <div class="host">Hosted by Tulsi</div>
+            <div class="date">May 20 – 25</div>
+            <div class="price">$174 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-3.avif" alt="House 3">
+            <div class="badge">Guest favorite</div>
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Patna, India<i class="fas fa-star"></i> 4.93</div>
+            <div class="host">Hosted by Jagdip</div>
+            <div class="date">May 19 – 24</div>
+            <div class="price">$136 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-4.avif" alt="House 4">
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Udaipur, India <i class="fas fa-star"></i> 5.0</div>
+            <div class="host">Hosted by Lovely & Jitu</div>
+            <div class="date">May 9 – 14</div>
+            <div class="price">$342 for 5 nights</div>
+          </div>
+        </div>
+      
+        <!-- Card 5 -->
+        <div class="card">
+          <div class="card-image">
+            <img src="./Assets/img-5.avif" alt="House 5">
+            <div class="badge">Guest favorite</div>
+            <div class="favorite"><i class="far fa-heart"></i></div>
+          </div>
+          <div class="card-content">
+            <div class="location">Jodhpur, India<i class="fas fa-star"></i> 4.82</div>
+            <div class="host">Hosted by Shuchita</div>
+            <div class="date">May 9 – 14</div>
+            <div class="price">$204 for 5 nights</div>
+          </div>
+        </div>
+      </div>
+<!-- Foot -->
+ <div class="foot">
+      <p class="foot-para">Continue exploring bed & breakfasts</p>
+      <a href="" class="foot-btn">Show more</a>
+      </div>
+
+      <!-- Footer -->
+
+  <div class="container">
+    <h2>Inspiration for future getaways</h2>
+    <div class="tabs">
+      <div class="tab active">Unique stays</div>
+      <div class="tab">Categories</div>
+      <div class="tab">Travel tips & inspiration</div>
+      <div class="tab">Airbnb-friendly apartments</div>
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        <h4>United States</h4>
+        <ul>
+          <li>Cabins</li>
+          <li>Treehouses</li>
+          <li>Glamping</li>
+          <li>Tiny Houses</li>
+          <li>Beach Houses</li>
+          <li>Campers and RVs</li>
+          <li>Lakehouses</li>
+          <li>Houseboats</li>
+          <li>Private Island Rentals</li>
+          <li>Farm Houses</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>United Kingdom</h4>
+        <ul>
+          <li>Yurt Rentals</li>
+          <li>Holiday Caravans</li>
+          <li>Farm Cottages</li>
+          <li>Luxury Cabins</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Australia</h4>
+        <ul>
+          <li>Cabin Rentals</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Other</h4>
+        <ul>
+          <li>Castle Rentals</li>
+          <li>Show more</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div>
+      <h4>Support</h4>
+      <ul>
+        <li>Help Center</li>
+        <li>AirCover</li>
+        <li>Anti-discrimination</li>
+        <li>Disability support</li>
+        <li>Cancellation options</li>
+        <li>Report neighborhood concern</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hosting</h4>
+      <ul>
+        <li>Airbnb your home</li>
+        <li>AirCover for Hosts</li>
+        <li>Hosting resources</li>
+        <li>Community forum</li>
+        <li>Hosting responsibly</li>
+        <li>Airbnb-friendly apartments</li>
+        <li>Join a free Hosting class</li>
+        <li>Find a co-host</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Airbnb</h4>
+      <ul>
+        <li>Newsroom</li>
+        <li>New features</li>
+        <li>Careers</li>
+        <li>Investors</li>
+        <li>Gift cards</li>
+        <li>Airbnb.org emergency stays</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
